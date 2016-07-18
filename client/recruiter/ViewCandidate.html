@@ -1,0 +1,19 @@
+<template name="ViewCandidate">
+	<article class="viewcandidate">
+	  <h3> {{name}} </h3> <br>
+	  			
+	  <h4> {{title}} </h4>	
+	  <p> {{degree}} </p>
+	  <p> {{location}} </p>
+	  	 	  
+	  	 	  <p> {{#each skills}}
+
+	  	 	  		<span class="candidate"> {{skill}} - {{proficiency}} </span>
+	  	 	  	
+	  	 	  	  {{/each}}
+	  	 	  </p> 
+	  	 	  
+	  	<a href = "/recruiter/{{_id}}"> View More </a>
+	</article>
+</template>
+

@@ -1,0 +1,19 @@
+<template name="Candidates">
+    
+     {{> AddCandidate}}
+
+ 
+    <section class="Candidates">   
+        {{#if Template.subscriptionsReady}}      
+ 		    {{#each Candidates }}
+ 				{{> ViewCandidate}}				
+ 			{{/each}}
+ 		{{else}}
+
+ 		    <p> Loading </p>
+
+ 		{{/if}}
+
+     </section>
+
+</template>
